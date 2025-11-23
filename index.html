@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&S Trade Bridge - Exclusive Brokerage Services</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        /* Custom Styling for the middleman theme */
+        :root {
+            --color-primary: #D4AF37; /* Gold/Honey */
+            --color-secondary: #4A4A4A; /* Dark Gray */
+            --color-background: #F8F8F8; /* Light Gray */
+            --color-text: #2D3748; /* Dark Text */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+        .text-gold {
+            color: var(--color-primary);
+        }
+        .bg-dark-gray {
+            background-color: var(--color-secondary);
+        }
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #C19E2B;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        .hero-background {
+            /* Cleaner Hero Background: Lighter base image with a less opaque overlay */
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.7), rgba(45, 55, 72, 0.6)), 
+                        url('https://placehold.co/1920x800/E5E7EB/4A4A4A?text=K%26S+Trade+Bridge+%7C+Global+Supply+Chain');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-handshake text-gold text-2xl"></i>
+                    <span class="text-xl font-bold text-gray-800">K&S Trade Bridge</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#services" class="text-gray-600 hover:text-gold transition duration-150">Services</a>
+                    <a href="#value" class="text-gray-600 hover:text-gold transition duration-150">Our Value</a>
+                    <a href="#products" class="text-gray-600 hover:text-gold transition duration-150">Products</a>
+                    <a href="#contact" class="btn-primary px-4 py-1.5 rounded-full text-sm font-semibold shadow-md">Get Started</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600 text-xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Services</a>
+                <a href="#value" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Our Value</a>
+                <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Products</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-background text-white h-[60vh] flex items-center justify-center text-center">
+        <div class="max-w-4xl px-4">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 leading-tight">
+                Bridging Premium <span class="text-gold">Georgian Exports</span> to the Global Market
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-8 opacity-90">
+                Your exclusive middleman for high-value agricultural commodities, specializing in high-altitude, raw Georgian Honey.
+            </p>
+            <a href="#contact" class="btn-primary inline-flex items-center px-8 py-3 rounded-full text-lg font-semibold shadow-2xl hover:shadow-gold transition duration-300">
+                Inquire Now <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Our End-to-End Brokerage Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1: Sourcing & Vetting -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fa-solid fa-magnifying-glass-chart text-gold text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Premium Sourcing</h3>
+                    <p class="text-gray-600 text-sm">Identifying and vetting top-tier, certified Georgian producers to ensure consistent supply and quality compliance.</p>
+                </div>
+
+                <!-- Service 2: Quality Assurance & Legal -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fa-solid fa-shield-halved text-gold text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Compliance & QA</h3>
+                    <p class="text-gray-600 text-sm">Managing all regulatory compliance (SFDA, MoPH) and rigorous third-party quality testing and documentation.</p>
+                </div>
+
+                <!-- Service 3: Exclusive Market Access -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fa-solid fa-map-location-dot text-gold text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Exclusive Market Access</h3>
+                    <p class="text-gray-600 text-sm">Connecting Georgian goods to high-demand markets in the Middle East, Asia, and specialized sectors.</p>
+                </div>
+
+                <!-- Service 4: Logistics & Delivery -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fa-solid fa-truck-fast text-gold text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Streamlined Logistics</h3>
+                    <p class="text-gray-600 text-sm">Handling all aspects of transport, customs, and documentation from producer to destination port (FOB/CIF).</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value" class="py-16 sm:py-24 bg-dark-gray text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Why Partner with a Dedicated Trade Bridge?</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Value Left: Text & Points -->
+                <div class="lg:w-1/2 space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <i class="fa-solid fa-file-contract text-gold text-3xl mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Commission Protection Guarantee</h3>
+                            <p class="text-gray-300">Our contracts feature robust, internationally recognized clauses (including Non-Circumvention) to secure broker fees on repeat business for years.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <i class="fa-solid fa-hand-holding-dollar text-gold text-3xl mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Risk & Financial Security</h3>
+                            <p class="text-gray-300">We manage the financial and legal risks of international trade, ensuring transparent pricing and eliminating costly payment disputes for both parties.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i class="fa-solid fa-people-arrows text-gold text-3xl mt-1 flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Cultural & Language Bridge</h3>
+                            <p class="text-gray-300">Expert navigation of Georgian export customs and Middle Eastern/Asian procurement practices, facilitating seamless communication and trust.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value Right: Image/Placeholder -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="bg-white p-6 rounded-xl shadow-2xl max-w-md w-full">
+                        <img src="https://placehold.co/600x400/D4AF37/FFFFFF?text=Partnership+%26+Trust" alt="Trade Partnership" class="rounded-lg mb-4 w-full h-auto">
+                        <p class="text-center text-gray-700 font-medium">Focused on long-term, verifiable supply chain relationships.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Our Product Focus: Georgian Honey</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                Our primary specialization is facilitating the export of rare, high-altitude, raw honey from the ecologically pristine regions of Georgia to demanding international markets.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Product 1: Honey Details -->
+                <div class="flex flex-col sm:flex-row items-center bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fa-solid fa-jar text-6xl text-gold sm:mr-6 mb-4 sm:mb-0 flex-shrink-0"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Unique Sourcing & Purity</h3>
+                        <ul class="list-none space-y-2 text-gray-700">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> High-Altitude Foraging</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Raw & Unprocessed Certification</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Non-GMO and Pesticide-Free</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product 2: Export Markets -->
+                <div class="flex flex-col sm:flex-row items-center bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fa-solid fa-earth-americas text-6xl text-gold sm:mr-6 mb-4 sm:mb-0 flex-shrink-0"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Targeted Export Markets</h3>
+                        <ul class="list-none space-y-2 text-gray-700">
+                            <li class="flex items-center"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i> Gulf Cooperation Council (GCC)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i> Key Asian Import Hubs (e.g., Japan)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i> Exclusive Distribution Networks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / CTA -->
+    <section id="contact" class="py-16 sm:py-24 bg-dark-gray text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Scale Your Trade?</h2>
+            <p class="text-xl font-light mb-8 text-gray-300">
+                Whether you are a Georgian producer seeking guaranteed global distribution or an international buyer looking for verified supply, contact us today.
+            </p>
+            
+            <form action="#" method="POST" class="space-y-6 text-left max-w-lg mx-auto bg-white p-8 rounded-xl shadow-2xl">
+                <input type="hidden" name="form-name" value="contact-form">
+                
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name / Company Name</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gold focus:border-gold sm:text-sm text-gray-800" placeholder="Your Name or Business">
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Business Email</label>
+                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gold focus:border-gold sm:text-sm text-gray-800" placeholder="contact@example.com">
+                </div>
+
+                <div>
+                    <label for="interest" class="block text-sm font-medium text-gray-700">I am a...</label>
+                    <select id="interest" name="interest" required class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-gold focus:border-gold sm:text-sm text-gray-800">
+                        <option value="">-- Select Interest --</option>
+                        <option value="buyer">International Buyer/Distributor</option>
+                        <option value="exporter">Georgian Producer/Exporter</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message / Volume Inquiry</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gold focus:border-gold sm:text-sm text-gray-800" placeholder="Tell us about your needs..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full flex justify-center items-center btn-primary px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-lg">
+                    Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 K&S Trade Bridge. All rights reserved. | Specializing in Exclusive Georgian Exports.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-gold transition duration-150"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#contact" class="text-gray-400 hover:text-gold transition duration-150">Contact</a>
+                <a href="#value" class="text-gray-400 hover:text-gold transition duration-150">Legal & Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
